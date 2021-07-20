@@ -32,6 +32,11 @@ namespace UpgradeRemover06
             mu = new MemoryUtils();
             bool success = mu.tryOpenXenia();
             Debug.WriteLineIf(success, "Process opened!");
+            if (!success)
+            {
+                MessageBox.Show("Open xenia first!");
+                Environment.Exit(1);
+            }
             Debug.WriteLine("hello o/");
             
             

@@ -1,0 +1,158 @@
+﻿<Window x:Class="UpgradeRemover06.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UpgradeRemover06"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="525" Width="350">
+    <Grid>
+        <Grid.ColumnDefinitions><ColumnDefinition/>
+        <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TreeView  Grid.ColumnSpan="3" Name="MainTreeView" Margin="30px 30px 30px 10px" >
+            <TreeViewItem IsExpanded="True"><TreeViewItem.Header>
+                <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Sonic</TextBlock></DockPanel>
+                </TreeViewItem.Header>
+                    <TreeViewItem>
+                <TreeViewItem.Header>
+                    <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Light Dash</TextBlock></DockPanel>
+                
+                </TreeViewItem.Header>
+                    </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Antigravity</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Bounce Bracelet</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Green Gem</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Red Gem</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Blue Gem</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>White Gem</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Sky Gem</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Yellow Gem</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Purple Gem</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+            
+            <TreeViewItem IsExpanded="True">
+                <TreeViewItem.Header>
+                <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Shadow</TextBlock></DockPanel>
+            </TreeViewItem.Header>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Light Dash</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Blue Memory Chip</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Red Memory Chip</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Black Memory Chip</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                
+            </TreeViewItem>
+            
+            <TreeViewItem IsExpanded="True">
+                <TreeViewItem.Header>
+                <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Silver</TextBlock></DockPanel>
+            </TreeViewItem.Header>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Single-Layer Extreme</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Power Bracelet</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Heart of Wind</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel><CheckBox Click="UpgradeOnClick"/><TextBlock>Shock Bracelet</TextBlock></DockPanel>
+                
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                
+            </TreeViewItem>
+            
+            
+
+        </TreeView>
+        <DockPanel HorizontalAlignment="Right" Margin="15px 10px" Grid.Row="1" Grid.Column="2">
+            <CheckBox Name="AltCheck"/><TextBlock> Alt. Addressing Scheme</TextBlock>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Right" Margin="15px 10px" Grid.Row="2" Grid.Column="2">
+            <CheckBox Name="LegacyCheck"/><TextBlock> Legacy Mode</TextBlock>
+        </DockPanel>
+        <Button Click="RefreshBtn_OnClick" Name="RefreshBtn" HorizontalAlignment="Left" Padding="10px 5px" Margin="5px 5px" Grid.Row="2" Grid.Column="0">Refresh</Button>
+    </Grid>
+</Window>    
+
